@@ -1,0 +1,7 @@
+@import '../assets/emoji/emoji.css';
+
+body{
+    background: skyblue;
+    position: relative;
+    height: 400px;
+}
