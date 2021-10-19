@@ -1,5 +1,5 @@
 const picker = document.querySelector('#emoji-picker');
-const popover = document.querySelector('#composer-popover')
+const popover = document.querySelector('#emoji-popover')
 
 picker.addEventListener('click', e => {
     e.stopPropagation();
@@ -12,7 +12,7 @@ const selector = document.querySelector('#emoji-select');
 
 for(let elem of selector.querySelectorAll('*')) {
     elem.addEventListener("click", () => {
-        const content = document.querySelector('#content')
+        const content = document.querySelector('#emoji-picker')
         const sp1 = content.querySelector('span');
         const emoji = sp1.querySelector('*');
         const sp1_content = document.createElement(`${elem.tagName}`);
